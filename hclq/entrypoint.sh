@@ -1,7 +1,6 @@
 #!/bin/sh
 
-set -x
 tmpfile=$(mktemp /tmp/abc-script.XXXXXX)
-cp $FILE_NAME $tmpfile
-cat $tmpfile | hclq set $TRANSFORMATION > $FILE_NAME
+cp $INPUT_FILE_NAME $tmpfile
+cat $tmpfile | hclq set $INPUT_TRANSFORMATION > $INPUT_FILE_NAME
 
