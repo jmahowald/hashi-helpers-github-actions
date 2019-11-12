@@ -13,7 +13,7 @@ jobs:
     - uses: ./hclq
       with: 
         file_name: ./hclq/test/test.auto.tfvars
-        transformation: set mytest goodvalue
+        transformation: mytest goodvalue
     - name: verify contents
       run: |
         diff ./hclq/test/test.auto.tfvars hclq/test/test-expected.tfvars
