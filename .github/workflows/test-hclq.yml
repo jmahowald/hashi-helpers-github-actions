@@ -1,4 +1,4 @@
-name: Packer Build
+name: Test HCLQ
 
 on:
   push: 
