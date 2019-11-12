@@ -1,0 +1,10 @@
+name: 'Update HCL files'
+description: runs [hclq](https://hclq.sh/)
+inputs:
+  file_name:
+    description: What file do you want to update
+  transform:
+    description: what transformation do you want.  e.g. set data.aws_vpc.vpc_id "vpc-xxx"
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
