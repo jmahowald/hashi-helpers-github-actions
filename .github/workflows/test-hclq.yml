@@ -4,6 +4,7 @@ on:
   push: 
     paths:
     - 'hclq/**'
+    - .github/workflows/test-hclq.yml
 jobs:
   test-hclq-build:
     runs-on: ubuntu-latest
